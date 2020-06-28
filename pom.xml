@@ -34,12 +34,12 @@
 
     <modules>
         <module>application-deployment-server</module>
-<!--        <module>application-deployment-web</module>-->
+        <module>application-deployment-web</module>
         <module>application-deployment-distrib</module>
     </modules>
 
     <build>
-        <finalName>guess-game</finalName>
+        <finalName>application-deployment</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

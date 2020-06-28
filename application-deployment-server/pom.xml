@@ -58,7 +58,7 @@
                             <outputDirectory>${project.build.directory}/classes/static/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.parent.basedir}/guess-game-web/target/classes/static/
+                                    <directory>${project.parent.basedir}/application-deployment-web/target/classes/static/
                                     </directory>
                                 </resource>
                             </resources>
@@ -70,12 +70,12 @@
     </build>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>application-deployment</groupId>-->
-<!--            <artifactId>application-deployment-web</artifactId>-->
-<!--            <version>${project.version}</version>-->
-<!--            <scope>runtime</scope>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>application-deployment</groupId>
+            <artifactId>application-deployment-web</artifactId>
+            <version>${project.version}</version>
+            <scope>runtime</scope>
+        </dependency>
 
         <!-- Spring -->
         <dependency>
