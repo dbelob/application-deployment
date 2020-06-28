@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FirstComponent } from './first.component';
 import { SecondComponent } from './second.component';
 import { ThirdComponent } from './third.component';
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { ThirdComponent } from './third.component';
     ThirdComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class HelloModule {
