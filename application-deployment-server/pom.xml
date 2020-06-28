@@ -33,7 +33,7 @@
                 <version>${spring.boot.version}</version>
                 <configuration>
                     <executable>true</executable>
-                    <mainClass>guess.App</mainClass>
+                    <mainClass>application.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>
