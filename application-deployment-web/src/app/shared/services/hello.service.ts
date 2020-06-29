@@ -16,7 +16,7 @@ export class HelloService {
     const params = new HttpParams()
       .set('name', name);
 
-    return this.http.get<string>(`${this.baseUrl}/message`, {params: params, responseType: 'text'})
+    return this.http.get<string>(`${this.baseUrl}/message`, {params, responseType: 'text' as 'json'})
       .pipe(
         catchError((response: Response) => {
           console.log('getMessage error, response: ' + JSON.stringify(response));
