@@ -100,4 +100,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/dbelob/application-deployment</developerConnection>
+    </scm>
 </project>
