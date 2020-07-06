@@ -29,4 +29,4 @@ jobs:
           git-release-bot-email: "release-bot@github.com"
           access-token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB\_TOKEN: ${{ secrets.GITHUB_TOKEN }}
