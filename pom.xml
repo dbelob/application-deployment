@@ -18,6 +18,7 @@
         <clean.plugin.version>3.1.0</clean.plugin.version>
         <compiler.plugin.version>3.8.1</compiler.plugin.version>
         <frontend.plugin.version>1.10.0</frontend.plugin.version>
+        <release.plugin.version>2.5.3</release.plugin.version>
         <resources.plugin.version>3.1.0</resources.plugin.version>
         <surefire.plugin.version>2.22.2</surefire.plugin.version>
         <war.plugin.version>3.3.0</war.plugin.version>
@@ -72,6 +73,14 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${war.plugin.version}</version>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>${release.plugin.version}</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
@@ -102,6 +111,6 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/dbelob/application-deployment</developerConnection>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
   </scm>
 </project>
