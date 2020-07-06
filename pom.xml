@@ -110,6 +110,7 @@
     </dependencyManagement>
 
     <scm>
+        <connection>scm:git:https://github.com/dbelob/application-deployment</connection>
         <developerConnection>scm:git:https://github.com/dbelob/application-deployment</developerConnection>
         <tag>HEAD</tag>
   </scm>
