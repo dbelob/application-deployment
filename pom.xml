@@ -114,12 +114,4 @@
         <developerConnection>scm:git:https://github.com/dbelob/application-deployment</developerConnection>
         <tag>HEAD</tag>
     </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/dbelob/application-deployment</url>
-        </repository>
-    </distributionManagement>
 </project>
