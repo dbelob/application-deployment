@@ -39,8 +39,8 @@ jobs:
           port: ${{ secrets.DEPLOY_PORT }}
           username: ${{ secrets.DEPLOY_USERNAME }}
           key:  ${{ secrets.DEPLOY_KEY }}
-          source: "application-deployment-server\target\application-deployment.war"
-          target: "/opt/application-deployment/application-deployment-${GITHUB_RUN_NUMBER}.war"
+          source: "application-deployment-server/target/application-deployment.war"
+          target: "/opt/application-deployment/application-deployment-${{ github.run_number }}.war"
       - name: Execute remote commands via SSH
         uses: appleboy/ssh-action@master
         with:
@@ -49,8 +49,8 @@ jobs:
           username: ${{ secrets.DEPLOY_USERNAME }}
           key:  ${{ secrets.DEPLOY_KEY }}
           script: |
-            chmod 755 /opt/application-deployment/application-deployment-${GITHUB_RUN_NUMBER}.war
+            chmod 755 /opt/application-deployment/application-deployment-${{ github.run_number }}.war
             sudo service application-deployment stop
-            sudo ln -sf /opt/application-deployment/application-deployment-${GITHUB_RUN_NUMBER}.war /etc/init.d/application-deployment
+            sudo ln -sf /opt/application-deployment/application-deployment-${{ github.run_number }}.war /etc/init.d/application-deployment
             sudo systemctl daemon-reload
             sudo service application-deployment start
