@@ -42,7 +42,7 @@ jobs:
           passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
           source: "application-deployment-server/target/application-deployment.war"
           target: "/opt/application-deployment"
-          strip_components: 1
+          strip_components: 2
       - name: Execute remote commands via SSH
         uses: appleboy/ssh-action@master
         with:
