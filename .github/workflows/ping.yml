@@ -27,6 +27,6 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
             Health check of the:
-            ${{ secrets.DEPLOY_HOST }}/api/actuator/health
+            https://${{ secrets.DEPLOY_HOST }}/api/actuator/health
             failed with the result:
             ${{ steps.ping.outputs.status }}
