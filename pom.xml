@@ -32,6 +32,8 @@
         <springfox.swagger>2.10.5</springfox.swagger>
 
         <ng.build.arguments>-- --prod=true</ng.build.arguments>
+
+        <sonar.coverage.exclusions>**/application/config/**/*</sonar.coverage.exclusions>
     </properties>
 
     <modules>
@@ -89,6 +91,11 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco.plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>application/config/**/*</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
