@@ -34,7 +34,7 @@
         <ng.build.arguments>-- --prod=true</ng.build.arguments>
 
         <sonar.coverage.exclusions>**/application/config/**/*</sonar.coverage.exclusions>
-        <sonar.coverage.jacoco.xmlReportPaths>./application-deployment-server/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+        <sonar.coverage.jacoco.xmlReportPaths>application-deployment-server/target/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <modules>
