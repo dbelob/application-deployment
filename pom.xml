@@ -35,7 +35,6 @@
 
         <aggregate.report.dir>application-deployment-distrib/target/site/jacoco-aggregate/jacoco.xml</aggregate.report.dir>
         <sonar.coverage.exclusions>**/application/config/**/*</sonar.coverage.exclusions>
-        <sonar.coverage.jacoco.xmlReportPaths>${basedir}/../${aggregate.report.dir}</sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <modules>

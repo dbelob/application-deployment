@@ -12,6 +12,10 @@
     <packaging>war</packaging>
     <name>ApplicationDeployment Server</name>
 
+    <properties>
+        <sonar.coverage.jacoco.xmlReportPaths>${basedir}/../${aggregate.report.dir}</sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
