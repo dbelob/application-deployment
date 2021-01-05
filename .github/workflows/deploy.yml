@@ -7,12 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[maven-release-plugin]')"
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false
       - name: Cache Maven packages
         uses: actions/cache@v2
         with:
@@ -26,5 +23,5 @@ jobs:
           maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
           git-release-bot-name: "release-bot"
           git-release-bot-email: "release-bot@github.com"
-          access-token: ${{ secrets.RELEASE_TOKEN }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
           skip-perform: true
