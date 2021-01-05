@@ -9,7 +9,6 @@ on:
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[maven-release-plugin]')"
     steps:
       - name: Update Google Chrome
         run: |
