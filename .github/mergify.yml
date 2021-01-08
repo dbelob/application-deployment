@@ -1,9 +1,9 @@
 pull_request_rules:
-  - name: Automatic merge on approval
+  - name: Automatic merge for Dependabot pull requests
     conditions:
       - author=dependabot[bot]
-      - check-success=build=build
-      - check-success=build=sonarcloud
+      - check-success=build
+      - check-success=sonarcloud
     actions:
       merge:
         method: merge
