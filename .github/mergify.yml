@@ -1,7 +1,9 @@
 pull_request_rules:
   - name: Automatic merge on approval
     conditions:
-      - "#approved-reviews-by>=1"
+      - author=dependabot[bot]
+      - check-success=build=build
+      - check-success=build=sonarcloud
     actions:
       merge:
         method: merge
