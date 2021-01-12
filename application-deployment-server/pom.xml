@@ -102,13 +102,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- YAML -->
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>${snakeyaml.version}</version>
-        </dependency>
-
         <!-- Swagger -->
         <dependency>
             <groupId>io.springfox</groupId>
