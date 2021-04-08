@@ -4,7 +4,7 @@
 
     <groupId>application-deployment</groupId>
     <artifactId>application-deployment-parent</artifactId>
-    <version>1.0.150-SNAPSHOT</version>
+    <version>1.0.152-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>ApplicationDeployment Parent</name>
 
