@@ -4,7 +4,7 @@
 
     <groupId>application-deployment</groupId>
     <artifactId>application-deployment-parent</artifactId>
-    <version>1.0.163-SNAPSHOT</version>
+    <version>1.0.165-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>ApplicationDeployment Parent</name>
 
@@ -27,7 +27,7 @@
 
         <logback.version>1.2.3</logback.version>
         <sl4j.version>1.7.30</sl4j.version>
-        <spring.boot.version>2.4.4</spring.boot.version>
+        <spring.boot.version>2.4.5</spring.boot.version>
         <springfox.swagger>3.0.0</springfox.swagger>
 
         <ng.build.arguments>-- --prod=true</ng.build.arguments>
