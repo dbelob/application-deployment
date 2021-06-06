@@ -96,6 +96,7 @@
                 <configuration>
                     <excludes>
                         <exclude>application/config/**/*</exclude>
+                        <exclude>application/App.*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
