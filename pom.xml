@@ -33,7 +33,7 @@
         <ng.build.arguments>-- --prod=true</ng.build.arguments>
 
         <sonar.coverage.exclusions>
-            **/application/config/**/*
+            **/application/config/**/*,
             **/application/App.*
         </sonar.coverage.exclusions>
     </properties>
