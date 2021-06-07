@@ -4,7 +4,7 @@
 
     <groupId>application-deployment</groupId>
     <artifactId>application-deployment-parent</artifactId>
-    <version>1.0.216-SNAPSHOT</version>
+    <version>1.0.216</version>
     <packaging>pom</packaging>
     <name>ApplicationDeployment Parent</name>
 
@@ -166,6 +166,6 @@
     <scm>
         <connection>scm:git:https://github.com/dbelob/application-deployment</connection>
         <developerConnection>scm:git:https://github.com/dbelob/application-deployment</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v1.0.216</tag>
     </scm>
 </project>
